@@ -1,6 +1,7 @@
 # Objetivo do Projeto
 
 Objetivo desse projeto é criar uma base com projeto Angular para construir aplicações.
+Inicialmente já possui o pacote [Angular Material](https://material.angular.io/) instalado.
 Possui uma classe abstract AppComponentBase, que injeta serviços que poderão ser extendidos em qualquer outro componente.
 Dentre eles:
 
