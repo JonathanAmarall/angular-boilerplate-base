@@ -14,9 +14,17 @@ import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from './shared/components/message/confirm-dialog/confirm-dialog.component';
 import { AlertDialogComponent } from './shared/components/message/alert-dialog/alert-dialog.component';
+import { NotifyComponent } from './shared/components/notify/notify.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
-  declarations: [AppComponent, SidenavComponent, ConfirmDialogComponent, AlertDialogComponent],
+  declarations: [
+    AppComponent,
+    SidenavComponent,
+    ConfirmDialogComponent,
+    AlertDialogComponent,
+    NotifyComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,6 +36,7 @@ import { AlertDialogComponent } from './shared/components/message/alert-dialog/a
     MatIconModule,
     MatListModule,
     MatDialogModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

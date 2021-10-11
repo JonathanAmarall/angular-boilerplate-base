@@ -11,9 +11,8 @@ export class UsersComponent extends AppComponentBase implements OnInit {
   }
 
   ngOnInit(): void {
-    this._messageService
-      .confirm('Atenção!', 'Seja bem-vindo!')
-      .afterClosed()
-      .subscribe((res) => console.log(res));
+    this._notifyService.success({
+      msg: 'Seja bem vindo',
+    });
   }
 }
