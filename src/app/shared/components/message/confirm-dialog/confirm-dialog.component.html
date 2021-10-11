@@ -1,0 +1,14 @@
+<div class="container">
+  <h2 mat-dialog-title class="text-center">{{ data.title }}</h2>
+  <mat-dialog-content>
+    <p class="text-center">{{ data.body }}</p>
+  </mat-dialog-content>
+  <mat-dialog-actions style="justify-content: center">
+    <button mat-raised-button color="basic" mat-dialog-close cdkFocusInitial>
+      {{ data.labelCancell }}
+    </button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="true">
+      {{ data.labelConfirm }}
+    </button>
+  </mat-dialog-actions>
+</div>
