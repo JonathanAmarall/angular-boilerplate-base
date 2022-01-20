@@ -1,0 +1,9 @@
+<div *ngIf="isSuperAdmin()">
+  {{ title }}
+</div>
+
+<app-title
+  #appTitle
+  (emitirEvento)="recebiEvento($event)"
+  title="Meu titulo"
+></app-title>

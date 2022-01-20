@@ -22,7 +22,7 @@ export class NotifyService {
     verticalPosition = 'bottom',
   }: Notify) {
     this._snackBar.openFromComponent(NotifyComponent, {
-      duration: 3000,
+      duration: 5000,
       data: msg,
       panelClass: ['bg-success'],
       horizontalPosition: horizontalPosition,
